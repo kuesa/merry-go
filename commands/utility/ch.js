@@ -15,9 +15,16 @@ module.exports = {
         let chapter = interaction.options.getInteger('chapter');
         let newNick;
 
-        currentNick = currentNick.replace(badRegex, '');
-        newNick = `${currentNick} [ch. ${chapter}]`;
-        await interaction.member.setNickname(newNick);
-        await interaction.reply({ content: `Set you to Chapter ${chapter}!`, ephemeral: true });
+        //check bounds
+        if (-1 < chapter < 2000) {
+            currentNick = currentNick.replace(badRegex, '');
+            newNick = `${currentNick} [ch. ${chapter}]`;
+            await interaction.member.setNickname(newNick);
+            await interaction.reply({ content: `Set you to Chapter ${chapter}!`, ephemeral: true });
+        } else {
+            await interaction.reply({ content: `Aye Matey! Enter chapters between 0 and 2000!`, ephemeral: true });
+        }
+
+        
     }
 };
