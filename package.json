@@ -1,0 +1,23 @@
+{
+  "name": "merry-go",
+  "version": "1.0.0",
+  "description": "one piece book club chapter bot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuesa/merry-go.git"
+  },
+  "author": "Kuesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuesa/merry-go/issues"
+  },
+  "homepage": "https://github.com/kuesa/merry-go#readme"
+}
