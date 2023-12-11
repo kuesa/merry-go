@@ -32,11 +32,7 @@ module.exports = {
         let poster = await Jimp.read('./commands/utility/wantedposter.png');
         let finalPoster = await new Jimp(751, 1063, '#000000ff');
 
-        // https://www.npmjs.com/package/jimp
-        // https://www.tutorialspoint.com/how-to-overlay-an-image-over-another-in-node-jimp
-        // https://github.com/Exploit1337/jimp-discordjs
         // resize pfp to fit inside poster window, then composite poster over the pfp
-        // https://stackoverflow.com/questions/49556025/place-image-over-an-other-image-using-jimp
         //pfp.resize(730, 730); // composite is 19,89
         pfp.resize(565, 565); // composite 106, 189
         //pfp.resize(557, 425); // composite 105, 248
@@ -51,9 +47,7 @@ module.exports = {
             opacitySource: 1
         });
 
-        // add text for name and bounty with .print()
-        // https://discordjs.guide/popular-topics/canvas.html#basic-image-loading
-
+        // add text for name and bounty
         let nameText = {
             text: name,
             alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
