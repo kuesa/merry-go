@@ -4,7 +4,8 @@
   "description": "one piece book club chapter bot",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "discord.js": "^14.14.1",
+    "jimp": "^0.22.10"
   },
   "devDependencies": {},
   "scripts": {

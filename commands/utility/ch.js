@@ -15,6 +15,7 @@ module.exports = {
         let chapter = interaction.options.getInteger('chapter');
         let newNick;
 
+        chapter = chapter > 0 ? chapter : 1;
         currentNick = currentNick.replace(badRegex, '');
         newNick = `${currentNick} [ch. ${chapter}]`;
         await interaction.member.setNickname(newNick);
